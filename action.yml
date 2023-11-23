@@ -1,0 +1,14 @@
+name: "Changesets Packages"
+description: "Parses and transforms Changesets action published packages"
+inputs:
+  changesets-action-published-packages:
+    description: "The published packages of the Changesets action"
+    required: true
+  packages:
+    description: "JSON array containing objects with the package.json 'name' property. These are the only packages that will be parsed, you can also add additional properties which will be included in the output"
+outputs:
+  packages:
+    description: "The parsed packages"
+runs:
+  using: "node20"
+  main: "index.js"
