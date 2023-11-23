@@ -11,4 +11,4 @@ outputs:
     description: "The parsed packages"
 runs:
   using: "node20"
-  main: "index.js"
+  main: "dist/index.js"
